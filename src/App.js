@@ -17,6 +17,14 @@ function App() {
         >
           Learn React
         </a>
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            throw new Error('Send event to sentry');
+          }}
+        >
+          Trigger Sentry
+        </button>
       </header>
     </div>
   );
